@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: times new "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+p {
+  font-weight: bold;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 90%;
+}
+#balance {
+  font-size: 15px;
+}
+#balance {
+  font-size: 25px;
+  margin: 0 0 0 7px;
+}
+/*code about the form and the add
+transaction button*/
+#form input {
+  width: 100%;
+  height: 25px;
+  border-color: rgb(223, 215, 215);
+  border-width: 1px;
+}
+#transaction-btn {
+  margin-top: 1vh;
+  width: 100%;
+  height: 25px;
+  background-color: rgb(135, 74, 206);
+  color: white;
+  height: 30px;
+}
+/*code regarding the income/expenses div*/
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  border-style: none;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 1px 1px 5px grey;
+}
+.container2 > div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 40%;
+}
+.container2 > div > p {
+  font-size: 19px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.container2 > div > span {
+  margin: 8px;
+}
+#border-here {
+  border-right: solid;
+  border-color: rgb(190, 190, 190);
+  border-width: 1px;
+}
+#money-income {
+  color: green;
+  font-weight: bold;
+}
+.plus {
+  color: green;
+  border-right: solid;
+  border-width: 4px;
+}
+.minus {
+  color: red;
+  border-right: solid;
+  border-width: 4px;
+}
+#money-expense {
+  color: red;
+  font-weight: bold;
+}
+/*code regarding the history list elements*/
+#list {
+  padding: 0;
+}
+li {
+  list-style: none;
+  border-style: none;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 5px;
+  margin: 12px;
+}
+
+.delete-btn {
+  background-color: red;
+  position: absolute;
+  right: 245px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+}
