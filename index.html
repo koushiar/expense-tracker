@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <h1>My Expense Tracker</h1>
+      <p>My Balance<br /><span id="balance">$0.00</span></p>
+      <div class="container2">
+        <div id="border-here" class="money">
+          <p>Income</p>
+          <span id="money-income">+$0.00</span>
+        </div>
+        <div clas="money">
+          <p>Expenses</p>
+          <span id="money-expense">-$0.00</span>
+        </div>
+      </div>
+      <div>
+        <h2>History</h2>
+        <hr />
+        <ul id="list">
+          <!--note that list items will be generated
+        dynamically using javascript-->
+        </ul>
+      </div>
+      <div id="adding-new-stuff">
+        <h3>Add New Transaction here</h3>
+        <hr />
+        <form id="form">
+          <label for="name-of-new">
+            <p>Text</p>
+            <input
+              type="text"
+              name="income-or-expense"
+              id="name-of-new"
+              placeholder="Enter Text"
+            />
+          </label>
+          <label for="amount">
+            <p>Amount (negative-expense,positive-income)</p>
+            <input
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Enter amount..."
+            />
+          </label>
+          <button id="transaction-btn">Add Transaction</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
